@@ -1,4 +1,579 @@
 {
+  "schemaVersion": 2,
+  "buildings": [
+    {
+      "id": "1",
+      "name_th": "กายวิภาคศาสตร์",
+      "name_en": "Anatomy Building",
+      "floors": null,
+      "lat": 13.75817969558069,
+      "lon": 100.48580488583411,
+      "map_x": 60.6,
+      "map_y": 44.9,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.75817969558069%2C100.48580488583411&travelmode=walking"
+    },
+    {
+      "id": "2",
+      "name_th": "กุมารเวชศาสตร์",
+      "name_en": "Pediatrics Building",
+      "floors": null,
+      "lat": 13.757004277921876,
+      "lon": 100.48451216940386,
+      "map_x": 32.6,
+      "map_y": 72.1,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757004277921876%2C100.48451216940386&travelmode=walking"
+    },
+    {
+      "id": "3",
+      "name_th": "โกศล กันตบุตร",
+      "name_en": "Kosol Kantabutra Building",
+      "floors": null,
+      "lat": 13.75695875322858,
+      "lon": 100.4843188338461,
+      "map_x": 28.4,
+      "map_y": 73.2,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.75695875322858%2C100.4843188338461&travelmode=walking"
+    },
+    {
+      "id": "4",
+      "name_th": "คณะเทคนิคการแพทย์",
+      "name_en": "Faculty of Medical Technology",
+      "floors": null,
+      "lat": 13.7578200479188,
+      "lon": 100.48625307208218,
+      "map_x": 70.3,
+      "map_y": 53.2,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.7578200479188%2C100.48625307208218&travelmode=walking"
+    },
+    {
+      "id": "5",
+      "name_th": "คณะพยาบาลศาสตร์",
+      "name_en": "Faculty of Nursing",
+      "floors": null,
+      "lat": 13.756722832895683,
+      "lon": 100.48633800441213,
+      "map_x": 72.2,
+      "map_y": 78.6,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756722832895683%2C100.48633800441213&travelmode=walking"
+    },
+    {
+      "id": "8",
+      "name_th": "จุฑาธุช",
+      "name_en": "Chudhathuj Building",
+      "floors": null,
+      "lat": 13.756606532746241,
+      "lon": 100.48526831398898,
+      "map_x": 49.0,
+      "map_y": 81.3,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756606532746241%2C100.48526831398898&travelmode=walking"
+    },
+    {
+      "id": "9",
+      "name_th": "จุลชีววิทยา",
+      "name_en": "Microbiology Building",
+      "floors": null,
+      "lat": 13.758295778335238,
+      "lon": 100.4851494752596,
+      "map_x": 46.4,
+      "map_y": 42.2,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.758295778335238%2C100.4851494752596&travelmode=walking"
+    },
+    {
+      "id": "10",
+      "name_th": "เจ้าฟ้ามหาจักรี",
+      "name_en": "HRH Princess Mahachakri Building",
+      "floors": null,
+      "lat": 13.756439546816162,
+      "lon": 100.48449126036495,
+      "map_x": 32.1,
+      "map_y": 85.2,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756439546816162%2C100.48449126036495&travelmode=walking"
+    },
+    {
+      "id": "13",
+      "name_th": "ชัยนาทนเรนทรานุสรณ์",
+      "name_en": "Jainadnarendhrannusorn Building",
+      "floors": null,
+      "lat": 13.757140615376658,
+      "lon": 100.48635409838171,
+      "map_x": 72.5,
+      "map_y": 69.0,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757140615376658%2C100.48635409838171&travelmode=walking"
+    },
+    {
+      "id": "14",
+      "name_th": "ตึก 10",
+      "name_en": "10th Building",
+      "floors": null,
+      "lat": 13.757724678214577,
+      "lon": 100.4843749339211,
+      "map_x": 29.6,
+      "map_y": 55.4,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757724678214577%2C100.4843749339211&travelmode=walking"
+    },
+    {
+      "id": "15",
+      "name_th": "ตึก 72 ปี",
+      "name_en": "72nd Anniversary Building",
+      "floors": null,
+      "lat": 13.75729157054895,
+      "lon": 100.48464705209929,
+      "map_x": 35.5,
+      "map_y": 65.5,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.75729157054895%2C100.48464705209929&travelmode=walking"
+    },
+    {
+      "id": "16",
+      "name_th": "ตึก 84 ปี",
+      "name_en": "84th Anniversary Building",
+      "floors": null,
+      "lat": 13.757821729836788,
+      "lon": 100.48466615574432,
+      "map_x": 35.9,
+      "map_y": 53.2,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757821729836788%2C100.48466615574432&travelmode=walking"
+    },
+    {
+      "id": "18",
+      "name_th": "ตึกสลากกินแบ่งรัฐบาล",
+      "name_en": "Lottery Building",
+      "floors": null,
+      "lat": 13.757369059733971,
+      "lon": 100.48337842270607,
+      "map_x": 8.0,
+      "map_y": 63.7,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757369059733971%2C100.48337842270607&travelmode=walking"
+    },
+    {
+      "id": "19",
+      "name_th": "ตึกอำนวยการ",
+      "name_en": "Administration Building",
+      "floors": null,
+      "lat": 13.75713929704944,
+      "lon": 100.48617096059897,
+      "map_x": 68.5,
+      "map_y": 69.0,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.75713929704944%2C100.48617096059897&travelmode=walking"
+    },
+    {
+      "id": "20",
+      "name_th": "ตึกอุบัติเหตุ",
+      "name_en": "Trauma Building",
+      "floors": null,
+      "lat": 13.756490861113539,
+      "lon": 100.48413766046527,
+      "map_x": 24.5,
+      "map_y": 84.0,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756490861113539%2C100.48413766046527&travelmode=walking"
+    },
+    {
+      "id": "21",
+      "name_th": "ทานผู้หญิงวิจิตรา",
+      "name_en": "Tanpuying Vijitra Building",
+      "floors": null,
+      "lat": 13.756231442730215,
+      "lon": 100.48561400906208,
+      "map_x": 56.5,
+      "map_y": 90.0,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756231442730215%2C100.48561400906208&travelmode=walking"
+    },
+    {
+      "id": "23",
+      "name_th": "นวมินทรบพิตร 84 พรรษา",
+      "name_en": "Navamindrapobitr 84th Anniversary Building",
+      "floors": null,
+      "lat": 13.757252189869378,
+      "lon": 100.48423440555536,
+      "map_x": 26.6,
+      "map_y": 66.4,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757252189869378%2C100.48423440555536&travelmode=walking"
+    },
+    {
+      "id": "24",
+      "name_th": "ผู้ป่วยนอก",
+      "name_en": "Out Patient Department Building",
+      "floors": null,
+      "lat": 13.756930763888862,
+      "lon": 100.48417571672796,
+      "map_x": 25.3,
+      "map_y": 73.8,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756930763888862%2C100.48417571672796&travelmode=walking"
+    },
+    {
+      "id": "26",
+      "name_th": "พระสุจริตสุดา",
+      "name_en": "Phrasucharitsuda Building",
+      "floors": null,
+      "lat": 13.756286416291841,
+      "lon": 100.48582734109587,
+      "map_x": 61.1,
+      "map_y": 88.7,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756286416291841%2C100.48582734109587&travelmode=walking"
+    },
+    {
+      "id": "37",
+      "name_th": "เภสัชกรรม",
+      "name_en": "Pharmacy Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "38",
+      "name_th": "โภชนาการ",
+      "name_en": "Nutrition Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "39",
+      "name_th": "มหิดลบำเพ็ญ",
+      "name_en": "Mahidolbumpen Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "40",
+      "name_th": "มหิดลวรานุสรณ์",
+      "name_en": "Mahidol Varanussorn Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "41",
+      "name_th": "รังสีราชนครินทร์",
+      "name_en": "Rajanagarindra Radiology Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "42",
+      "name_th": "รังสีเร่งอนุภาค",
+      "name_en": "Ray Accelerators Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "44",
+      "name_th": "โรงพยาบาลศิริราช ปิยมหาราชการุณย์",
+      "name_en": "Siriraj Piyamaharajkarun Hospital (SiPH)",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "45",
+      "name_th": "วิจัยเวชศาสตร์นิวเคลียร์",
+      "name_en": "Nuclear Medicine Research Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "46",
+      "name_th": "วิบุลลักสม์",
+      "name_en": "Vibunluk Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "47",
+      "name_th": "ศรีสวรินทิรา",
+      "name_en": "Srisavarindira Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "48",
+      "name_th": "ศรีสังวาลย์",
+      "name_en": "Srisangwan Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "49",
+      "name_th": "ศรีสังวาลย์ (ตึกเล็กและสระว่ายน้ำ)",
+      "name_en": "Srisangwan Building (Small Wing & Swimming Pool)",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "52",
+      "name_th": "ศูนย์โรคหัวใจสมเด็จพระบรมราชินีนาถ",
+      "name_en": "Her Majesty Cardiac Centre Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "53",
+      "name_th": "ศูนย์วิจัยการแพทย์ศิริราช (SiMR) อาคารเฉลิมพระเกียรติ 80 พรรษา 5 ธันวาคม 2550",
+      "name_en": "SiMR His Majesty The King's 80th Birthday Anniversary Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "57",
+      "name_th": "สยามินทร์",
+      "name_en": "Syamindra Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "59",
+      "name_th": "หอประชาธิปไตย",
+      "name_en": "Prachatipatai Dormitory",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "61",
+      "name_th": "หอพักนักศึกษาแพทย์หญิง (13 ชั้น) หอหญิง 2",
+      "name_en": "Female Medical Students Dormitory 2",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "62",
+      "name_th": "หอพักนักศึกษาแพทย์หญิง (5 ชั้น) หอหญิง 1",
+      "name_en": "Female Medical Students Dormitory 1",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "63",
+      "name_th": "หอพักพยาบาล 1",
+      "name_en": "Nursing Dormitory 1",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "64",
+      "name_th": "หอพักพยาบาล 3",
+      "name_en": "Nursing Dormitory 3",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "65",
+      "name_th": "หอพักพยาบาล 4",
+      "name_en": "Nursing Dormitory 4",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "OPD",
+      "name_th": "หอพักแพทย์ประจำบ้าน (10 ชั้น)",
+      "name_en": "Dormitory Resident (10 Floor)",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "TRAUMA",
+      "name_th": "หอพักแพทย์ประจำบ้าน (6 ชั้น)",
+      "name_en": "Dormitory Resident (6 Floor)",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "CP1",
+      "name_th": "หอพักและอาคารจอดรถ อาคาร A (8 ไร่)",
+      "name_en": "Dormitory & Car Park Building A",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "SVN",
+      "name_th": "หอพักและอาคารจอดรถ อาคาร B (8 ไร่)",
+      "name_en": "Dormitory & Car Park Building B",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "ND3",
+      "name_th": "หอมหิตลาคารสมเด็จพระราชปิตุจฉา",
+      "name_en": "Mahitalakan Somdejphrarajpitucha Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "B",
+      "name_th": "อดุลยเดชวิกรม",
+      "name_en": "Adulyadejvikrom Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "ก",
+      "name_th": "อัษฎางค์",
+      "name_en": "Asdang Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "ค",
+      "name_th": "อาคาร 100 ปี สมเด็จพระศรีนครินทร์",
+      "name_en": "100th Year Somdech Phrasrinagarindra Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "จ",
+      "name_th": "อาคารเฉลิมพระเกียรติ",
+      "name_en": "Chalermphrakiet Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "ว",
+      "name_th": "อาคารเรียนทางสูติศาสตร์",
+      "name_en": "Education Building for Obstetrics",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "ศ",
+      "name_th": "อานันทมหิดล (ธนาคารไทยพาณิชย์ ชั้น 1)",
+      "name_en": "Anandamahidol Building (SCB 1st Floor)",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    },
+    {
+      "id": "ส",
+      "name_th": "อานันทราช",
+      "name_en": "Anandaraj Building",
+      "floors": null,
+      "lat": null,
+      "lon": null,
+      "map_x": null,
+      "map_y": null,
+      "google_maps_url": ""
+    }
+  ],
   "places": [
     {
       "id": "1",
@@ -14,9 +589,16 @@
         "museum",
         "บริจาคร่างกาย"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "1",
+      "building_name_th": "กายวิภาคศาสตร์",
+      "building_name_en": "Anatomy Building",
       "category": "building",
       "building": "academic",
       "floor": "ตำแหน่ง 24",
+      "floor_label": "ตำแหน่ง 24",
+      "room": "",
       "description": "สถานที่กลุ่ม academic",
       "phone": "-",
       "opening_hours": "-",
@@ -26,7 +608,8 @@
       "is_accessible": true,
       "icon": "🎓",
       "lat": 13.75817969558069,
-      "lon": 100.48580488583411
+      "lon": 100.48580488583411,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.75817969558069%2C100.48580488583411&travelmode=walking"
     },
     {
       "id": "2",
@@ -41,9 +624,16 @@
         "clinical",
         "ร้านอาหาร"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "2",
+      "building_name_th": "กุมารเวชศาสตร์",
+      "building_name_en": "Pediatrics Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 39",
+      "floor_label": "ตำแหน่ง 39",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -53,7 +643,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.757004277921876,
-      "lon": 100.48451216940386
+      "lon": 100.48451216940386,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757004277921876%2C100.48451216940386&travelmode=walking"
     },
     {
       "id": "3",
@@ -67,9 +658,16 @@
         "building",
         "academic"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "3",
+      "building_name_th": "โกศล กันตบุตร",
+      "building_name_en": "Kosol Kantabutra Building",
       "category": "building",
       "building": "academic",
       "floor": "ตำแหน่ง 38",
+      "floor_label": "ตำแหน่ง 38",
+      "room": "",
       "description": "สถานที่กลุ่ม academic",
       "phone": "-",
       "opening_hours": "-",
@@ -79,7 +677,8 @@
       "is_accessible": true,
       "icon": "🎓",
       "lat": 13.75695875322858,
-      "lon": 100.4843188338461
+      "lon": 100.4843188338461,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.75695875322858%2C100.4843188338461&travelmode=walking"
     },
     {
       "id": "4",
@@ -93,9 +692,16 @@
         "building",
         "faculty"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "4",
+      "building_name_th": "คณะเทคนิคการแพทย์",
+      "building_name_en": "Faculty of Medical Technology",
       "category": "building",
       "building": "faculty",
       "floor": "ตำแหน่ง 30",
+      "floor_label": "ตำแหน่ง 30",
+      "room": "",
       "description": "สถานที่กลุ่ม faculty",
       "phone": "-",
       "opening_hours": "-",
@@ -105,7 +711,8 @@
       "is_accessible": true,
       "icon": "🏫",
       "lat": 13.7578200479188,
-      "lon": 100.48625307208218
+      "lon": 100.48625307208218,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.7578200479188%2C100.48625307208218&travelmode=walking"
     },
     {
       "id": "5",
@@ -120,9 +727,16 @@
         "faculty",
         "ร้านอาหาร"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "5",
+      "building_name_th": "คณะพยาบาลศาสตร์",
+      "building_name_en": "Faculty of Nursing",
       "category": "building",
       "building": "faculty",
       "floor": "ตำแหน่ง 53",
+      "floor_label": "ตำแหน่ง 53",
+      "room": "",
       "description": "สถานที่กลุ่ม faculty",
       "phone": "-",
       "opening_hours": "-",
@@ -132,7 +746,8 @@
       "is_accessible": true,
       "icon": "🏫",
       "lat": 13.756722832895683,
-      "lon": 100.48633800441213
+      "lon": 100.48633800441213,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756722832895683%2C100.48633800441213&travelmode=walking"
     },
     {
       "id": "7",
@@ -146,9 +761,16 @@
         "facility",
         "service"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "service",
       "floor": "ตำแหน่ง 13",
+      "floor_label": "ตำแหน่ง 13",
+      "room": "",
       "description": "สถานที่กลุ่ม service",
       "phone": "-",
       "opening_hours": "-",
@@ -158,7 +780,8 @@
       "is_accessible": true,
       "icon": "🛠️",
       "lat": 13.758737769995129,
-      "lon": 100.48420754800296
+      "lon": 100.48420754800296,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.758737769995129%2C100.48420754800296&travelmode=walking"
     },
     {
       "id": "8",
@@ -172,9 +795,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "8",
+      "building_name_th": "จุฑาธุช",
+      "building_name_en": "Chudhathuj Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 44",
+      "floor_label": "ตำแหน่ง 44",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -184,7 +814,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.756606532746241,
-      "lon": 100.48526831398898
+      "lon": 100.48526831398898,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756606532746241%2C100.48526831398898&travelmode=walking"
     },
     {
       "id": "9",
@@ -198,9 +829,16 @@
         "building",
         "academic"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "9",
+      "building_name_th": "จุลชีววิทยา",
+      "building_name_en": "Microbiology Building",
       "category": "building",
       "building": "academic",
       "floor": "ตำแหน่ง 21",
+      "floor_label": "ตำแหน่ง 21",
+      "room": "",
       "description": "สถานที่กลุ่ม academic",
       "phone": "-",
       "opening_hours": "-",
@@ -210,7 +848,8 @@
       "is_accessible": true,
       "icon": "🎓",
       "lat": 13.758295778335238,
-      "lon": 100.4851494752596
+      "lon": 100.4851494752596,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.758295778335238%2C100.4851494752596&travelmode=walking"
     },
     {
       "id": "10",
@@ -226,9 +865,16 @@
         "atm",
         "ร้านอาหาร"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "10",
+      "building_name_th": "เจ้าฟ้ามหาจักรี",
+      "building_name_en": "HRH Princess Mahachakri Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 40",
+      "floor_label": "ตำแหน่ง 40",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -238,7 +884,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.756439546816162,
-      "lon": 100.48449126036495
+      "lon": 100.48449126036495,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756439546816162%2C100.48449126036495&travelmode=walking"
     },
     {
       "id": "11",
@@ -252,9 +899,16 @@
         "facility",
         "service"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "service",
       "floor": "ตำแหน่ง 18",
+      "floor_label": "ตำแหน่ง 18",
+      "room": "",
       "description": "สถานที่กลุ่ม service",
       "phone": "-",
       "opening_hours": "-",
@@ -264,7 +918,8 @@
       "is_accessible": true,
       "icon": "🛠️",
       "lat": 13.75917060031477,
-      "lon": 100.48518868101947
+      "lon": 100.48518868101947,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.75917060031477%2C100.48518868101947&travelmode=walking"
     },
     {
       "id": "12",
@@ -278,9 +933,16 @@
         "facility",
         "service"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "service",
       "floor": "ตำแหน่ง 17",
+      "floor_label": "ตำแหน่ง 17",
+      "room": "",
       "description": "สถานที่กลุ่ม service",
       "phone": "-",
       "opening_hours": "-",
@@ -290,7 +952,8 @@
       "is_accessible": true,
       "icon": "🛠️",
       "lat": 13.759171902934934,
-      "lon": 100.48502774848151
+      "lon": 100.48502774848151,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.759171902934934%2C100.48502774848151&travelmode=walking"
     },
     {
       "id": "13",
@@ -306,9 +969,16 @@
         "toilet",
         "บริจาคเงิน"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "13",
+      "building_name_th": "ชัยนาทนเรนทรานุสรณ์",
+      "building_name_en": "Jainadnarendhrannusorn Building",
       "category": "building",
       "building": "academic",
       "floor": "ตำแหน่ง 54",
+      "floor_label": "ตำแหน่ง 54",
+      "room": "",
       "description": "สถานที่กลุ่ม academic",
       "phone": "-",
       "opening_hours": "-",
@@ -318,7 +988,8 @@
       "is_accessible": true,
       "icon": "🎓",
       "lat": 13.757140615376658,
-      "lon": 100.48635409838171
+      "lon": 100.48635409838171,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757140615376658%2C100.48635409838171&travelmode=walking"
     },
     {
       "id": "14",
@@ -333,9 +1004,16 @@
         "clinical",
         "จำหน่ายของที่ระลึก"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "14",
+      "building_name_th": "ตึก 10",
+      "building_name_en": "10th Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 10",
+      "floor_label": "ตำแหน่ง 10",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -345,7 +1023,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.757724678214577,
-      "lon": 100.4843749339211
+      "lon": 100.4843749339211,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757724678214577%2C100.4843749339211&travelmode=walking"
     },
     {
       "id": "15",
@@ -360,9 +1039,16 @@
         "clinical",
         "บริจาคเลือด"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "15",
+      "building_name_th": "ตึก 72 ปี",
+      "building_name_en": "72nd Anniversary Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 34",
+      "floor_label": "ตำแหน่ง 34",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -372,7 +1058,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.75729157054895,
-      "lon": 100.48464705209929
+      "lon": 100.48464705209929,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.75729157054895%2C100.48464705209929&travelmode=walking"
     },
     {
       "id": "16",
@@ -387,9 +1074,16 @@
         "clinical",
         "ไปรษณีไทย"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "16",
+      "building_name_th": "ตึก 84 ปี",
+      "building_name_en": "84th Anniversary Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 25",
+      "floor_label": "ตำแหน่ง 25",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -399,7 +1093,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.757821729836788,
-      "lon": 100.48466615574432
+      "lon": 100.48466615574432,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757821729836788%2C100.48466615574432&travelmode=walking"
     },
     {
       "id": "17",
@@ -414,9 +1109,16 @@
         "service",
         "SIAM COMMERCIAL BANK bldg"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "service",
       "floor": "ตำแหน่ง 48",
+      "floor_label": "ตำแหน่ง 48",
+      "room": "",
       "description": "สถานที่กลุ่ม service",
       "phone": "-",
       "opening_hours": "-",
@@ -426,7 +1128,8 @@
       "is_accessible": true,
       "icon": "🛠️",
       "lat": 13.75657693207311,
-      "lon": 100.48606223051154
+      "lon": 100.48606223051154,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.75657693207311%2C100.48606223051154&travelmode=walking"
     },
     {
       "id": "18",
@@ -441,9 +1144,16 @@
         "clinical",
         "LOTTERY Bldg."
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "18",
+      "building_name_th": "ตึกสลากกินแบ่งรัฐบาล",
+      "building_name_en": "Lottery Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 4",
+      "floor_label": "ตำแหน่ง 4",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -453,7 +1163,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.757369059733971,
-      "lon": 100.48337842270607
+      "lon": 100.48337842270607,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757369059733971%2C100.48337842270607&travelmode=walking"
     },
     {
       "id": "19",
@@ -468,9 +1179,16 @@
         "admin",
         "info"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "19",
+      "building_name_th": "ตึกอำนวยการ",
+      "building_name_en": "Administration Building",
       "category": "building",
       "building": "admin",
       "floor": "ตำแหน่ง 37",
+      "floor_label": "ตำแหน่ง 37",
+      "room": "",
       "description": "สถานที่กลุ่ม admin",
       "phone": "-",
       "opening_hours": "-",
@@ -480,7 +1198,8 @@
       "is_accessible": true,
       "icon": "🏛️",
       "lat": 13.75713929704944,
-      "lon": 100.48617096059897
+      "lon": 100.48617096059897,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.75713929704944%2C100.48617096059897&travelmode=walking"
     },
     {
       "id": "20",
@@ -495,9 +1214,16 @@
         "clinical",
         "atm"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "20",
+      "building_name_th": "ตึกอุบัติเหตุ",
+      "building_name_en": "Trauma Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 2",
+      "floor_label": "ตำแหน่ง 2",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -507,7 +1233,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.756490861113539,
-      "lon": 100.48413766046527
+      "lon": 100.48413766046527,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756490861113539%2C100.48413766046527&travelmode=walking"
     },
     {
       "id": "21",
@@ -521,9 +1248,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "21",
+      "building_name_th": "ทานผู้หญิงวิจิตรา",
+      "building_name_en": "Tanpuying Vijitra Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 50",
+      "floor_label": "ตำแหน่ง 50",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -533,7 +1267,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.756231442730215,
-      "lon": 100.48561400906208
+      "lon": 100.48561400906208,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756231442730215%2C100.48561400906208&travelmode=walking"
     },
     {
       "id": "23",
@@ -549,9 +1284,16 @@
         "ร้านอาหาร",
         "atm"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "23",
+      "building_name_th": "นวมินทรบพิตร 84 พรรษา",
+      "building_name_en": "Navamindrapobitr 84th Anniversary Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 9",
+      "floor_label": "ตำแหน่ง 9",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -561,7 +1303,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.757252189869378,
-      "lon": 100.48423440555536
+      "lon": 100.48423440555536,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.757252189869378%2C100.48423440555536&travelmode=walking"
     },
     {
       "id": "24",
@@ -577,9 +1320,16 @@
         "atm",
         "ร้านอาหาร"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "24",
+      "building_name_th": "ผู้ป่วยนอก",
+      "building_name_en": "Out Patient Department Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 3",
+      "floor_label": "ตำแหน่ง 3",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -589,7 +1339,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.756930763888862,
-      "lon": 100.48417571672796
+      "lon": 100.48417571672796,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756930763888862%2C100.48417571672796&travelmode=walking"
     },
     {
       "id": "25",
@@ -602,9 +1353,16 @@
         "landmark",
         "memorial"
       ],
+      "entity_type": "unit",
+      "unit_type": "landmark",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "landmark",
       "building": "memorial",
       "floor": "-",
+      "floor_label": "-",
+      "room": "",
       "description": "สถานที่กลุ่ม memorial",
       "phone": "-",
       "opening_hours": "-",
@@ -614,7 +1372,8 @@
       "is_accessible": true,
       "icon": "🕊️",
       "lat": 13.75713926689077,
-      "lon": 100.48547901570504
+      "lon": 100.48547901570504,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.75713926689077%2C100.48547901570504&travelmode=walking"
     },
     {
       "id": "26",
@@ -628,9 +1387,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "26",
+      "building_name_th": "พระสุจริตสุดา",
+      "building_name_en": "Phrasucharitsuda Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 51",
+      "floor_label": "ตำแหน่ง 51",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -640,7 +1406,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": 13.756286416291841,
-      "lon": 100.48582734109587
+      "lon": 100.48582734109587,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.756286416291841%2C100.48582734109587&travelmode=walking"
     },
     {
       "id": "27",
@@ -654,9 +1421,16 @@
         "landmark",
         "memorial"
       ],
+      "entity_type": "unit",
+      "unit_type": "landmark",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "landmark",
       "building": "memorial",
       "floor": "ตำแหน่ง 63",
+      "floor_label": "ตำแหน่ง 63",
+      "room": "",
       "description": "สถานที่กลุ่ม memorial",
       "phone": "-",
       "opening_hours": "-",
@@ -666,7 +1440,8 @@
       "is_accessible": true,
       "icon": "🕊️",
       "lat": 13.759688199130265,
-      "lon": 100.48725278652664
+      "lon": 100.48725278652664,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.759688199130265%2C100.48725278652664&travelmode=walking"
     },
     {
       "id": "28",
@@ -679,9 +1454,16 @@
         "M1",
         "museum"
       ],
+      "entity_type": "unit",
+      "unit_type": "museum",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "museum",
       "building": "museum",
       "floor": "ตำแหน่ง M1",
+      "floor_label": "ตำแหน่ง M1",
+      "room": "",
       "description": "สถานที่กลุ่ม museum",
       "phone": "-",
       "opening_hours": "-",
@@ -691,7 +1473,8 @@
       "is_accessible": true,
       "icon": "🏛️",
       "lat": 13.758270162441702,
-      "lon": 100.48624659740642
+      "lon": 100.48624659740642,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.758270162441702%2C100.48624659740642&travelmode=walking"
     },
     {
       "id": "29",
@@ -704,9 +1487,16 @@
         "M4",
         "museum"
       ],
+      "entity_type": "unit",
+      "unit_type": "museum",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "museum",
       "building": "museum",
       "floor": "ตำแหน่ง M4",
+      "floor_label": "ตำแหน่ง M4",
+      "room": "",
       "description": "สถานที่กลุ่ม museum",
       "phone": "-",
       "opening_hours": "-",
@@ -716,7 +1506,8 @@
       "is_accessible": true,
       "icon": "🏛️",
       "lat": 13.758165636463067,
-      "lon": 100.48622686824046
+      "lon": 100.48622686824046,
+      "google_maps_url": "https://www.google.com/maps/dir/?api=1&destination=13.758165636463067%2C100.48622686824046&travelmode=walking"
     },
     {
       "id": "30",
@@ -729,9 +1520,16 @@
         "M5",
         "museum"
       ],
+      "entity_type": "unit",
+      "unit_type": "museum",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "museum",
       "building": "museum",
       "floor": "ตำแหน่ง M5",
+      "floor_label": "ตำแหน่ง M5",
+      "room": "",
       "description": "สถานที่กลุ่ม museum",
       "phone": "-",
       "opening_hours": "-",
@@ -741,7 +1539,8 @@
       "is_accessible": true,
       "icon": "🏛️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "31",
@@ -754,9 +1553,16 @@
         "M3",
         "museum"
       ],
+      "entity_type": "unit",
+      "unit_type": "museum",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "museum",
       "building": "museum",
       "floor": "ตำแหน่ง M3",
+      "floor_label": "ตำแหน่ง M3",
+      "room": "",
       "description": "สถานที่กลุ่ม museum",
       "phone": "-",
       "opening_hours": "-",
@@ -766,7 +1572,8 @@
       "is_accessible": true,
       "icon": "🏛️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "32",
@@ -779,9 +1586,16 @@
         "M2",
         "museum"
       ],
+      "entity_type": "unit",
+      "unit_type": "museum",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "museum",
       "building": "museum",
       "floor": "ตำแหน่ง M2",
+      "floor_label": "ตำแหน่ง M2",
+      "room": "",
       "description": "สถานที่กลุ่ม museum",
       "phone": "-",
       "opening_hours": "-",
@@ -791,7 +1605,8 @@
       "is_accessible": true,
       "icon": "🏛️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "33",
@@ -804,9 +1619,16 @@
         "M8",
         "museum"
       ],
+      "entity_type": "unit",
+      "unit_type": "museum",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "museum",
       "building": "museum",
       "floor": "ตำแหน่ง M8",
+      "floor_label": "ตำแหน่ง M8",
+      "room": "",
       "description": "สถานที่กลุ่ม museum",
       "phone": "-",
       "opening_hours": "-",
@@ -816,7 +1638,8 @@
       "is_accessible": true,
       "icon": "🏛️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "34",
@@ -829,9 +1652,16 @@
         "M7",
         "museum"
       ],
+      "entity_type": "unit",
+      "unit_type": "museum",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "museum",
       "building": "museum",
       "floor": "ตำแหน่ง M7",
+      "floor_label": "ตำแหน่ง M7",
+      "room": "",
       "description": "สถานที่กลุ่ม museum",
       "phone": "-",
       "opening_hours": "-",
@@ -841,7 +1671,8 @@
       "is_accessible": true,
       "icon": "🏛️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "36",
@@ -854,9 +1685,16 @@
         "M6",
         "museum"
       ],
+      "entity_type": "unit",
+      "unit_type": "museum",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "museum",
       "building": "museum",
       "floor": "ตำแหน่ง M6",
+      "floor_label": "ตำแหน่ง M6",
+      "room": "",
       "description": "สถานที่กลุ่ม museum",
       "phone": "-",
       "opening_hours": "-",
@@ -866,7 +1704,8 @@
       "is_accessible": true,
       "icon": "🏛️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "37",
@@ -880,9 +1719,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "37",
+      "building_name_th": "เภสัชกรรม",
+      "building_name_en": "Pharmacy Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 61",
+      "floor_label": "ตำแหน่ง 61",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -892,7 +1738,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "38",
@@ -906,9 +1753,16 @@
         "building",
         "service"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "38",
+      "building_name_th": "โภชนาการ",
+      "building_name_en": "Nutrition Building",
       "category": "building",
       "building": "service",
       "floor": "ตำแหน่ง 20",
+      "floor_label": "ตำแหน่ง 20",
+      "room": "",
       "description": "สถานที่กลุ่ม service",
       "phone": "-",
       "opening_hours": "-",
@@ -918,7 +1772,8 @@
       "is_accessible": true,
       "icon": "🛠️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "39",
@@ -933,9 +1788,16 @@
         "academic",
         "บริจาคเงิน"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "39",
+      "building_name_th": "มหิดลบำเพ็ญ",
+      "building_name_en": "Mahidolbumpen Building",
       "category": "building",
       "building": "academic",
       "floor": "ตำแหน่ง 31",
+      "floor_label": "ตำแหน่ง 31",
+      "room": "",
       "description": "สถานที่กลุ่ม academic",
       "phone": "-",
       "opening_hours": "-",
@@ -945,7 +1807,8 @@
       "is_accessible": true,
       "icon": "🎓",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "40",
@@ -959,9 +1822,16 @@
         "building",
         "academic"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "40",
+      "building_name_th": "มหิดลวรานุสรณ์",
+      "building_name_en": "Mahidol Varanussorn Building",
       "category": "building",
       "building": "academic",
       "floor": "ตำแหน่ง 49",
+      "floor_label": "ตำแหน่ง 49",
+      "room": "",
       "description": "สถานที่กลุ่ม academic",
       "phone": "-",
       "opening_hours": "-",
@@ -971,7 +1841,8 @@
       "is_accessible": true,
       "icon": "🎓",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "41",
@@ -985,9 +1856,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "41",
+      "building_name_th": "รังสีราชนครินทร์",
+      "building_name_en": "Rajanagarindra Radiology Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 8",
+      "floor_label": "ตำแหน่ง 8",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -997,7 +1875,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "42",
@@ -1011,9 +1890,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "42",
+      "building_name_th": "รังสีเร่งอนุภาค",
+      "building_name_en": "Ray Accelerators Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 26",
+      "floor_label": "ตำแหน่ง 26",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1023,7 +1909,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "43",
@@ -1037,9 +1924,16 @@
         "amenity",
         "souvenir"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "amenity",
       "floor": "-",
+      "floor_label": "-",
+      "room": "",
       "description": "สถานที่กลุ่ม amenity",
       "phone": "-",
       "opening_hours": "-",
@@ -1049,7 +1943,8 @@
       "is_accessible": true,
       "icon": "🛎️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "44",
@@ -1065,9 +1960,16 @@
         "atm",
         "ร้านอาหาร"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "44",
+      "building_name_th": "โรงพยาบาลศิริราช ปิยมหาราชการุณย์",
+      "building_name_en": "Siriraj Piyamaharajkarun Hospital (SiPH)",
       "category": "building",
       "building": "hospital",
       "floor": "ตำแหน่ง 64",
+      "floor_label": "ตำแหน่ง 64",
+      "room": "",
       "description": "สถานที่กลุ่ม hospital",
       "phone": "-",
       "opening_hours": "-",
@@ -1077,7 +1979,8 @@
       "is_accessible": true,
       "icon": "🏥",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "45",
@@ -1091,9 +1994,16 @@
         "building",
         "research"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "45",
+      "building_name_th": "วิจัยเวชศาสตร์นิวเคลียร์",
+      "building_name_en": "Nuclear Medicine Research Building",
       "category": "building",
       "building": "research",
       "floor": "ตำแหน่ง 62",
+      "floor_label": "ตำแหน่ง 62",
+      "room": "",
       "description": "สถานที่กลุ่ม research",
       "phone": "-",
       "opening_hours": "-",
@@ -1103,7 +2013,8 @@
       "is_accessible": true,
       "icon": "🔬",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "46",
@@ -1117,9 +2028,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "46",
+      "building_name_th": "วิบุลลักสม์",
+      "building_name_en": "Vibunluk Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 52",
+      "floor_label": "ตำแหน่ง 52",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1129,7 +2047,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "47",
@@ -1145,9 +2064,16 @@
         "atm",
         "ร้านอาหาร"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "47",
+      "building_name_th": "ศรีสวรินทิรา",
+      "building_name_en": "Srisavarindira Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 23",
+      "floor_label": "ตำแหน่ง 23",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1157,7 +2083,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "48",
@@ -1171,9 +2098,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "48",
+      "building_name_th": "ศรีสังวาลย์",
+      "building_name_en": "Srisangwan Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 32",
+      "floor_label": "ตำแหน่ง 32",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1183,7 +2117,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "49",
@@ -1197,9 +2132,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "49",
+      "building_name_th": "ศรีสังวาลย์ (ตึกเล็กและสระว่ายน้ำ)",
+      "building_name_en": "Srisangwan Building (Small Wing & Swimming Pool)",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 36",
+      "floor_label": "ตำแหน่ง 36",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1209,7 +2151,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "50",
@@ -1223,9 +2166,16 @@
         "facility",
         "service"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "service",
       "floor": "ตำแหน่ง 16",
+      "floor_label": "ตำแหน่ง 16",
+      "room": "",
       "description": "สถานที่กลุ่ม service",
       "phone": "-",
       "opening_hours": "-",
@@ -1235,7 +2185,8 @@
       "is_accessible": true,
       "icon": "🛠️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "51",
@@ -1249,9 +2200,16 @@
         "facility",
         "amenity"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "amenity",
       "floor": "ตำแหน่ง 35",
+      "floor_label": "ตำแหน่ง 35",
+      "room": "",
       "description": "สถานที่กลุ่ม amenity",
       "phone": "-",
       "opening_hours": "-",
@@ -1261,7 +2219,8 @@
       "is_accessible": true,
       "icon": "🛎️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "52",
@@ -1275,9 +2234,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "52",
+      "building_name_th": "ศูนย์โรคหัวใจสมเด็จพระบรมราชินีนาถ",
+      "building_name_en": "Her Majesty Cardiac Centre Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 33",
+      "floor_label": "ตำแหน่ง 33",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1287,7 +2253,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "53",
@@ -1301,9 +2268,16 @@
         "building",
         "research"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "53",
+      "building_name_th": "ศูนย์วิจัยการแพทย์ศิริราช (SiMR) อาคารเฉลิมพระเกียรติ 80 พรรษา 5 ธันวาคม 2550",
+      "building_name_en": "SiMR His Majesty The King's 80th Birthday Anniversary Building",
       "category": "building",
       "building": "research",
       "floor": "ตำแหน่ง 65",
+      "floor_label": "ตำแหน่ง 65",
+      "room": "",
       "description": "สถานที่กลุ่ม research",
       "phone": "-",
       "opening_hours": "-",
@@ -1313,7 +2287,8 @@
       "is_accessible": true,
       "icon": "🔬",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "54",
@@ -1328,9 +2303,16 @@
         "amenity",
         "ร้านอาหาร"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "amenity",
       "floor": "ตำแหน่ง 7",
+      "floor_label": "ตำแหน่ง 7",
+      "room": "",
       "description": "สถานที่กลุ่ม amenity",
       "phone": "-",
       "opening_hours": "-",
@@ -1340,7 +2322,8 @@
       "is_accessible": true,
       "icon": "🛎️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "55",
@@ -1354,9 +2337,16 @@
         "facility",
         "service"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "service",
       "floor": "ตำแหน่ง 15",
+      "floor_label": "ตำแหน่ง 15",
+      "room": "",
       "description": "สถานที่กลุ่ม service",
       "phone": "-",
       "opening_hours": "-",
@@ -1366,7 +2356,8 @@
       "is_accessible": true,
       "icon": "🛠️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "56",
@@ -1381,9 +2372,16 @@
         "amenity",
         "ร้านอาหาร"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "amenity",
       "floor": "ตำแหน่ง 57",
+      "floor_label": "ตำแหน่ง 57",
+      "room": "",
       "description": "สถานที่กลุ่ม amenity",
       "phone": "-",
       "opening_hours": "-",
@@ -1393,7 +2391,8 @@
       "is_accessible": true,
       "icon": "🛎️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "57",
@@ -1408,9 +2407,16 @@
         "clinical",
         "atm"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "57",
+      "building_name_th": "สยามินทร์",
+      "building_name_en": "Syamindra Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 27",
+      "floor_label": "ตำแหน่ง 27",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1420,7 +2426,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "58",
@@ -1434,9 +2441,16 @@
         "facility",
         "parking"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "parking",
       "floor": "ตำแหน่ง 14",
+      "floor_label": "ตำแหน่ง 14",
+      "room": "",
       "description": "สถานที่กลุ่ม parking",
       "phone": "-",
       "opening_hours": "-",
@@ -1446,7 +2460,8 @@
       "is_accessible": true,
       "icon": "🅿️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "59",
@@ -1462,9 +2477,16 @@
         "ร้านอาหาร",
         "atm"
       ],
+      "entity_type": "building",
+      "unit_type": "dormitory",
+      "building_id": "59",
+      "building_name_th": "หอประชาธิปไตย",
+      "building_name_en": "Prachatipatai Dormitory",
       "category": "dormitory",
       "building": "student",
       "floor": "ตำแหน่ง 56",
+      "floor_label": "ตำแหน่ง 56",
+      "room": "",
       "description": "สถานที่กลุ่ม student",
       "phone": "-",
       "opening_hours": "-",
@@ -1474,7 +2496,8 @@
       "is_accessible": true,
       "icon": "🎒",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "60",
@@ -1488,9 +2511,16 @@
         "facility",
         "amenity"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "amenity",
       "floor": "ตำแหน่ง 55",
+      "floor_label": "ตำแหน่ง 55",
+      "room": "",
       "description": "สถานที่กลุ่ม amenity",
       "phone": "-",
       "opening_hours": "-",
@@ -1500,7 +2530,8 @@
       "is_accessible": true,
       "icon": "🛎️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "61",
@@ -1515,9 +2546,16 @@
         "student",
         "atm"
       ],
+      "entity_type": "building",
+      "unit_type": "dormitory",
+      "building_id": "61",
+      "building_name_th": "หอพักนักศึกษาแพทย์หญิง (13 ชั้น) หอหญิง 2",
+      "building_name_en": "Female Medical Students Dormitory 2",
       "category": "dormitory",
       "building": "student",
       "floor": "ตำแหน่ง 22",
+      "floor_label": "ตำแหน่ง 22",
+      "room": "",
       "description": "สถานที่กลุ่ม student",
       "phone": "-",
       "opening_hours": "-",
@@ -1527,7 +2565,8 @@
       "is_accessible": true,
       "icon": "🎒",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "62",
@@ -1542,9 +2581,16 @@
         "student",
         "atm"
       ],
+      "entity_type": "building",
+      "unit_type": "dormitory",
+      "building_id": "62",
+      "building_name_th": "หอพักนักศึกษาแพทย์หญิง (5 ชั้น) หอหญิง 1",
+      "building_name_en": "Female Medical Students Dormitory 1",
       "category": "dormitory",
       "building": "student",
       "floor": "ตำแหน่ง 60",
+      "floor_label": "ตำแหน่ง 60",
+      "room": "",
       "description": "สถานที่กลุ่ม student",
       "phone": "-",
       "opening_hours": "-",
@@ -1554,7 +2600,8 @@
       "is_accessible": true,
       "icon": "🎒",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "63",
@@ -1568,9 +2615,16 @@
         "dormitory",
         "nursing"
       ],
+      "entity_type": "building",
+      "unit_type": "dormitory",
+      "building_id": "63",
+      "building_name_th": "หอพักพยาบาล 1",
+      "building_name_en": "Nursing Dormitory 1",
       "category": "dormitory",
       "building": "nursing",
       "floor": "ตำแหน่ง 46",
+      "floor_label": "ตำแหน่ง 46",
+      "room": "",
       "description": "สถานที่กลุ่ม nursing",
       "phone": "-",
       "opening_hours": "-",
@@ -1580,7 +2634,8 @@
       "is_accessible": true,
       "icon": "👩‍⚕️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "64",
@@ -1595,9 +2650,16 @@
         "nursing",
         "atm"
       ],
+      "entity_type": "building",
+      "unit_type": "dormitory",
+      "building_id": "64",
+      "building_name_th": "หอพักพยาบาล 3",
+      "building_name_en": "Nursing Dormitory 3",
       "category": "dormitory",
       "building": "nursing",
       "floor": "ตำแหน่ง 11",
+      "floor_label": "ตำแหน่ง 11",
+      "room": "",
       "description": "สถานที่กลุ่ม nursing",
       "phone": "-",
       "opening_hours": "-",
@@ -1607,7 +2669,8 @@
       "is_accessible": true,
       "icon": "👩‍⚕️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "65",
@@ -1621,9 +2684,16 @@
         "dormitory",
         "nursing"
       ],
+      "entity_type": "building",
+      "unit_type": "dormitory",
+      "building_id": "65",
+      "building_name_th": "หอพักพยาบาล 4",
+      "building_name_en": "Nursing Dormitory 4",
       "category": "dormitory",
       "building": "nursing",
       "floor": "ตำแหน่ง 12",
+      "floor_label": "ตำแหน่ง 12",
+      "room": "",
       "description": "สถานที่กลุ่ม nursing",
       "phone": "-",
       "opening_hours": "-",
@@ -1633,7 +2703,8 @@
       "is_accessible": true,
       "icon": "👩‍⚕️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "OPD",
@@ -1648,9 +2719,16 @@
         "resident",
         "ร้านอาหาร"
       ],
+      "entity_type": "building",
+      "unit_type": "dormitory",
+      "building_id": "OPD",
+      "building_name_th": "หอพักแพทย์ประจำบ้าน (10 ชั้น)",
+      "building_name_en": "Dormitory Resident (10 Floor)",
       "category": "dormitory",
       "building": "resident",
       "floor": "ตำแหน่ง 6",
+      "floor_label": "ตำแหน่ง 6",
+      "room": "",
       "description": "สถานที่กลุ่ม resident",
       "phone": "-",
       "opening_hours": "-",
@@ -1660,7 +2738,8 @@
       "is_accessible": true,
       "icon": "👩‍⚕️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "TRAUMA",
@@ -1674,9 +2753,16 @@
         "dormitory",
         "resident"
       ],
+      "entity_type": "building",
+      "unit_type": "dormitory",
+      "building_id": "TRAUMA",
+      "building_name_th": "หอพักแพทย์ประจำบ้าน (6 ชั้น)",
+      "building_name_en": "Dormitory Resident (6 Floor)",
       "category": "dormitory",
       "building": "resident",
       "floor": "ตำแหน่ง 5",
+      "floor_label": "ตำแหน่ง 5",
+      "room": "",
       "description": "สถานที่กลุ่ม resident",
       "phone": "-",
       "opening_hours": "-",
@@ -1686,7 +2772,8 @@
       "is_accessible": true,
       "icon": "👩‍⚕️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "CP1",
@@ -1700,9 +2787,16 @@
         "dormitory",
         "parking"
       ],
+      "entity_type": "building",
+      "unit_type": "dormitory",
+      "building_id": "CP1",
+      "building_name_th": "หอพักและอาคารจอดรถ อาคาร A (8 ไร่)",
+      "building_name_en": "Dormitory & Car Park Building A",
       "category": "dormitory",
       "building": "parking",
       "floor": "ตำแหน่ง A",
+      "floor_label": "ตำแหน่ง A",
+      "room": "",
       "description": "สถานที่กลุ่ม parking",
       "phone": "-",
       "opening_hours": "-",
@@ -1712,7 +2806,8 @@
       "is_accessible": true,
       "icon": "🅿️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "SVN",
@@ -1726,9 +2821,16 @@
         "dormitory",
         "parking"
       ],
+      "entity_type": "building",
+      "unit_type": "dormitory",
+      "building_id": "SVN",
+      "building_name_th": "หอพักและอาคารจอดรถ อาคาร B (8 ไร่)",
+      "building_name_en": "Dormitory & Car Park Building B",
       "category": "dormitory",
       "building": "parking",
       "floor": "ตำแหน่ง B",
+      "floor_label": "ตำแหน่ง B",
+      "room": "",
       "description": "สถานที่กลุ่ม parking",
       "phone": "-",
       "opening_hours": "-",
@@ -1738,7 +2840,8 @@
       "is_accessible": true,
       "icon": "🅿️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "ND3",
@@ -1753,9 +2856,16 @@
         "clinical",
         "toilet"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "ND3",
+      "building_name_th": "หอมหิตลาคารสมเด็จพระราชปิตุจฉา",
+      "building_name_en": "Mahitalakan Somdejphrarajpitucha Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 58",
+      "floor_label": "ตำแหน่ง 58",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1765,7 +2875,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "A",
@@ -1781,9 +2892,16 @@
         "atm",
         "ร้านอาหาร"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "amenity",
       "floor": "ตำแหน่ง 56",
+      "floor_label": "ตำแหน่ง 56",
+      "room": "",
       "description": "สถานที่กลุ่ม amenity",
       "phone": "-",
       "opening_hours": "-",
@@ -1793,7 +2911,8 @@
       "is_accessible": true,
       "icon": "🛎️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "B",
@@ -1808,9 +2927,16 @@
         "clinical",
         "museum"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "B",
+      "building_name_th": "อดุลยเดชวิกรม",
+      "building_name_en": "Adulyadejvikrom Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 19",
+      "floor_label": "ตำแหน่ง 19",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1820,7 +2946,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "ก",
@@ -1835,9 +2962,16 @@
         "clinical",
         "atm"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "ก",
+      "building_name_th": "อัษฎางค์",
+      "building_name_en": "Asdang Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 47",
+      "floor_label": "ตำแหน่ง 47",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1847,7 +2981,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "ค",
@@ -1863,9 +2998,16 @@
         "atm",
         "ร้านอาหาร"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "ค",
+      "building_name_th": "อาคาร 100 ปี สมเด็จพระศรีนครินทร์",
+      "building_name_en": "100th Year Somdech Phrasrinagarindra Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 42",
+      "floor_label": "ตำแหน่ง 42",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1875,7 +3017,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "ง",
@@ -1889,9 +3032,16 @@
         "facility",
         "parking"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "parking",
       "floor": "ตำแหน่ง 1",
+      "floor_label": "ตำแหน่ง 1",
+      "room": "",
       "description": "สถานที่กลุ่ม parking",
       "phone": "-",
       "opening_hours": "-",
@@ -1901,7 +3051,8 @@
       "is_accessible": true,
       "icon": "🅿️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "จ",
@@ -1915,9 +3066,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "จ",
+      "building_name_th": "อาคารเฉลิมพระเกียรติ",
+      "building_name_en": "Chalermphrakiet Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 29",
+      "floor_label": "ตำแหน่ง 29",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -1927,7 +3085,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "ร",
@@ -1941,9 +3100,16 @@
         "facility",
         "amenity"
       ],
+      "entity_type": "unit",
+      "unit_type": "facility",
+      "building_id": "",
+      "building_name_th": "",
+      "building_name_en": "",
       "category": "facility",
       "building": "amenity",
       "floor": "ตำแหน่ง 45",
+      "floor_label": "ตำแหน่ง 45",
+      "room": "",
       "description": "สถานที่กลุ่ม amenity",
       "phone": "-",
       "opening_hours": "-",
@@ -1953,7 +3119,8 @@
       "is_accessible": true,
       "icon": "🛎️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "ว",
@@ -1967,9 +3134,16 @@
         "building",
         "academic"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "ว",
+      "building_name_th": "อาคารเรียนทางสูติศาสตร์",
+      "building_name_en": "Education Building for Obstetrics",
       "category": "building",
       "building": "academic",
       "floor": "ตำแหน่ง 43",
+      "floor_label": "ตำแหน่ง 43",
+      "room": "",
       "description": "สถานที่กลุ่ม academic",
       "phone": "-",
       "opening_hours": "-",
@@ -1979,7 +3153,8 @@
       "is_accessible": true,
       "icon": "🎓",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "ศ",
@@ -1994,9 +3169,16 @@
         "service",
         "atm"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "ศ",
+      "building_name_th": "อานันทมหิดล (ธนาคารไทยพาณิชย์ ชั้น 1)",
+      "building_name_en": "Anandamahidol Building (SCB 1st Floor)",
       "category": "building",
       "building": "service",
       "floor": "ตำแหน่ง 41",
+      "floor_label": "ตำแหน่ง 41",
+      "room": "",
       "description": "สถานที่กลุ่ม service",
       "phone": "-",
       "opening_hours": "-",
@@ -2006,7 +3188,8 @@
       "is_accessible": true,
       "icon": "🛠️",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     },
     {
       "id": "ส",
@@ -2020,9 +3203,16 @@
         "building",
         "clinical"
       ],
+      "entity_type": "building",
+      "unit_type": "building",
+      "building_id": "ส",
+      "building_name_th": "อานันทราช",
+      "building_name_en": "Anandaraj Building",
       "category": "building",
       "building": "clinical",
       "floor": "ตำแหน่ง 28",
+      "floor_label": "ตำแหน่ง 28",
+      "room": "",
       "description": "สถานที่กลุ่ม clinical",
       "phone": "-",
       "opening_hours": "-",
@@ -2032,7 +3222,8 @@
       "is_accessible": true,
       "icon": "🩺",
       "lat": null,
-      "lon": null
+      "lon": null,
+      "google_maps_url": ""
     }
   ],
   "startNodes": [

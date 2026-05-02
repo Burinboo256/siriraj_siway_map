@@ -6,12 +6,14 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 import openpyxl
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT_XLSX = ROOT / "siriraj_data_location.xlsx"
 OUTPUT_JSON = ROOT / "data" / "siriraj_data_location.json"
+BUILDING_CATEGORIES = {"building", "dormitory"}
 
 
 def to_str(value: Any) -> str:
@@ -61,6 +63,17 @@ def icon_for(group: str, category: str) -> str:
         "dormitory": "🏠",
     }
     return by_group.get(group) or by_category.get(category) or "📍"
+
+
+def google_maps_url(lat: float | None, lon: float | None) -> str:
+    if lat is None or lon is None:
+        return ""
+    destination = quote(f"{lat},{lon}", safe="")
+    return f"https://www.google.com/maps/dir/?api=1&destination={destination}&travelmode=walking"
+
+
+def entity_type_for(category: str) -> str:
+    return "building" if category in BUILDING_CATEGORIES else "unit"
 
 
 def main() -> None:
@@ -116,6 +129,8 @@ def main() -> None:
         map_x = map_y = None
         if p["lat"] is not None and p["lon"] is not None:
             map_x, map_y = to_xy(p["lat"], p["lon"])
+        entity_type = entity_type_for(p["category"])
+        floor_label = f"ตำแหน่ง {p['map_no']}" if p["map_no"] else "-"
 
         aliases = [p["name_th"], p["name_en"], p["id"], p["map_no"], p["category"], p["group"], *p["facilities"]]
         dedup = []
@@ -136,9 +151,16 @@ def main() -> None:
                 "name_th": p["name_th"] or p["id"],
                 "name_en": p["name_en"] or p["name_th"] or p["id"],
                 "aliases": dedup,
+                "entity_type": entity_type,
+                "unit_type": p["category"] or "-",
+                "building_id": p["id"] if entity_type == "building" else "",
+                "building_name_th": p["name_th"] if entity_type == "building" else "",
+                "building_name_en": p["name_en"] if entity_type == "building" else "",
                 "category": p["category"] or "-",
                 "building": p["group"] or "-",
-                "floor": f"ตำแหน่ง {p['map_no']}" if p["map_no"] else "-",
+                "floor": floor_label,
+                "floor_label": floor_label,
+                "room": "",
                 "description": p["description_th"] or (f"สถานที่กลุ่ม {p['group']}" if p["group"] else "ข้อมูลจากไฟล์ Excel"),
                 "phone": "-",
                 "opening_hours": "-",
@@ -149,8 +171,25 @@ def main() -> None:
                 "icon": icon_for(p["group"], p["category"]),
                 "lat": p["lat"],
                 "lon": p["lon"],
+                "google_maps_url": google_maps_url(p["lat"], p["lon"]),
             }
         )
+
+    buildings = [
+        {
+            "id": pl["id"],
+            "name_th": pl["name_th"],
+            "name_en": pl["name_en"],
+            "floors": None,
+            "lat": pl["lat"],
+            "lon": pl["lon"],
+            "map_x": pl["map_x"],
+            "map_y": pl["map_y"],
+            "google_maps_url": pl["google_maps_url"],
+        }
+        for pl in places
+        if pl["entity_type"] == "building"
+    ]
 
     start_nodes = [
         {
@@ -165,6 +204,8 @@ def main() -> None:
     ][:4]
 
     payload = {
+        "schemaVersion": 2,
+        "buildings": buildings,
         "places": places,
         "startNodes": start_nodes,
         "routeSteps": {
