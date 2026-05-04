@@ -6,8 +6,17 @@
   <title>SiWay Admin</title>
   <style>
     :root{
-      --bg:#f6f7f9; --panel:#fff; --text:#172033; --muted:#667085; --line:#d8dee8;
-      --accent:#0f6b5f; --accent-soft:#e7f5f2; --warn:#a15c00; --warn-soft:#fff4df;
+      --bg:#f6f7f9;
+      --panel:#fff;
+      --text:#172033;
+      --muted:#667085;
+      --line:#d8dee8;
+      --accent:#0f6b5f;
+      --accent-soft:#e7f5f2;
+      --warn:#a15c00;
+      --warn-soft:#fff4df;
+      --ok:#0f766e;
+      --ok-soft:#ecfeff;
     }
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -16,15 +25,73 @@
     h1{margin:0;font-size:28px;line-height:1.1}
     .sub{color:var(--muted);font-size:14px;margin-top:6px}
     .actions{display:flex;gap:8px;flex-wrap:wrap}
-    .btn{height:40px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--text);padding:0 12px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+    .btn{
+      height:40px;
+      border:1px solid var(--line);
+      border-radius:8px;
+      background:#fff;
+      color:var(--text);
+      padding:0 12px;
+      font-weight:700;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      font:inherit;
+      cursor:pointer;
+    }
     .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
     .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:18px 0}
     .stat,.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px}
     .stat{padding:14px}
     .stat b{display:block;font-size:26px}
     .stat span{color:var(--muted);font-size:13px}
+    .status{
+      margin-bottom:12px;
+      border:1px solid var(--line);
+      border-radius:8px;
+      padding:10px 12px;
+      background:#fff;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .status.warn{background:var(--warn-soft);color:var(--warn);border-color:#f5d9b1}
+    .status.ok{background:var(--ok-soft);color:var(--ok);border-color:#a5f3fc}
     .filters{display:grid;grid-template-columns:1fr 160px 180px 160px;gap:10px;padding:12px;margin-bottom:12px}
-    input,select{height:42px;border:1px solid var(--line);border-radius:8px;padding:0 12px;font:inherit;background:#fff;color:var(--text)}
+    input,select,textarea{
+      height:42px;
+      border:1px solid var(--line);
+      border-radius:8px;
+      padding:0 12px;
+      font:inherit;
+      background:#fff;
+      color:var(--text);
+    }
+    textarea{
+      height:auto;
+      min-height:84px;
+      padding:10px 12px;
+      resize:vertical;
+    }
+    .editor{padding:14px;margin-bottom:12px}
+    .editor-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+    .editor-head h2{margin:0;font-size:20px}
+    .editor-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .field{display:flex;flex-direction:column;gap:6px}
+    .field.full{grid-column:1/-1}
+    .field label{font-size:12px;color:var(--muted);font-weight:700}
+    .checkbox{
+      border:1px solid var(--line);
+      border-radius:8px;
+      height:42px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      padding:0 12px;
+      font-size:14px;
+    }
+    .checkbox input{width:18px;height:18px;margin:0}
+    .form-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px;flex-wrap:wrap}
     table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}
     th,td{text-align:left;border-bottom:1px solid var(--line);padding:12px;vertical-align:top}
     th{font-size:12px;text-transform:uppercase;color:var(--muted);background:#f0f3f7}
@@ -41,7 +108,7 @@
       .shell{padding:16px}
       .top{align-items:flex-start;flex-direction:column}
       .stats{grid-template-columns:1fr 1fr}
-      .filters{grid-template-columns:1fr}
+      .filters,.editor-grid{grid-template-columns:1fr}
       table,thead,tbody,tr,th,td{display:block}
       thead{display:none}
       tr{border-bottom:1px solid var(--line)}
@@ -59,9 +126,14 @@
       <div class="actions">
         <a class="btn" href="index.html">หน้า User</a>
         <a class="btn" href="data/siriraj_data_location.json">เปิด JSON</a>
-        <a class="btn primary" href="siriraj_data_location.xlsx">ดาวน์โหลด Excel</a>
+        <a class="btn" href="siriraj_data_location.xlsx">ดาวน์โหลด Excel</a>
+        <button class="btn" id="reloadDataBtn" type="button">โหลดข้อมูลใหม่</button>
+        <button class="btn" id="exportJsonBtn" type="button">Export JSON</button>
+        <button class="btn primary" id="addLocationBtn" type="button">+ เพิ่ม location</button>
       </div>
     </header>
+
+    <section id="statusBar" class="status" hidden></section>
 
     <section class="stats" id="stats"></section>
 
@@ -80,25 +152,227 @@
       </select>
     </section>
 
+    <section class="panel editor" id="editorPanel" hidden>
+      <div class="editor-head">
+        <h2 id="editorTitle">เพิ่ม location</h2>
+        <div class="row-actions">
+          <button class="btn small" id="cancelEditBtn" type="button">ยกเลิก</button>
+        </div>
+      </div>
+      <form id="editorForm">
+        <div class="editor-grid">
+          <div class="field">
+            <label for="f_id">ID *</label>
+            <input id="f_id" required />
+          </div>
+          <div class="field">
+            <label for="f_entity_type">Entity Type</label>
+            <select id="f_entity_type">
+              <option value="unit">unit</option>
+              <option value="building">building</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f_name_th">ชื่อไทย *</label>
+            <input id="f_name_th" required />
+          </div>
+          <div class="field">
+            <label for="f_name_en">ชื่ออังกฤษ</label>
+            <input id="f_name_en" />
+          </div>
+          <div class="field">
+            <label for="f_unit_type">Unit Type</label>
+            <input id="f_unit_type" placeholder="clinic / ward / service / building" />
+          </div>
+          <div class="field">
+            <label for="f_category">Category</label>
+            <input id="f_category" placeholder="service / building / lab ..." />
+          </div>
+          <div class="field">
+            <label for="f_building_pick">เลือกตึกจากรายการ</label>
+            <select id="f_building_pick"></select>
+          </div>
+          <div class="field">
+            <label for="f_building_id">Building ID</label>
+            <input id="f_building_id" />
+          </div>
+          <div class="field">
+            <label for="f_building_name_th">Building Name (TH)</label>
+            <input id="f_building_name_th" />
+          </div>
+          <div class="field">
+            <label for="f_building_name_en">Building Name (EN)</label>
+            <input id="f_building_name_en" />
+          </div>
+          <div class="field">
+            <label for="f_floor_label">Floor Label</label>
+            <input id="f_floor_label" placeholder="เช่น ชั้น 2" />
+          </div>
+          <div class="field">
+            <label for="f_room">Room</label>
+            <input id="f_room" />
+          </div>
+          <div class="field">
+            <label for="f_map_x">map_x (%)</label>
+            <input id="f_map_x" type="number" step="0.1" />
+          </div>
+          <div class="field">
+            <label for="f_map_y">map_y (%)</label>
+            <input id="f_map_y" type="number" step="0.1" />
+          </div>
+          <div class="field">
+            <label for="f_lat">lat</label>
+            <input id="f_lat" type="number" step="0.0000001" />
+          </div>
+          <div class="field">
+            <label for="f_lon">lon</label>
+            <input id="f_lon" type="number" step="0.0000001" />
+          </div>
+          <div class="field">
+            <label for="f_icon">Icon</label>
+            <input id="f_icon" maxlength="4" placeholder="📍" />
+          </div>
+          <div class="field">
+            <label for="f_phone">Phone</label>
+            <input id="f_phone" />
+          </div>
+          <div class="field">
+            <label for="f_opening_hours">Opening Hours</label>
+            <input id="f_opening_hours" />
+          </div>
+          <div class="field">
+            <label for="f_google_maps_url">Google Maps URL</label>
+            <input id="f_google_maps_url" />
+          </div>
+          <div class="field full">
+            <label for="f_description">Description</label>
+            <textarea id="f_description"></textarea>
+          </div>
+          <div class="field full">
+            <label for="f_nearby_landmark">Nearby Landmark (คั่นด้วย comma)</label>
+            <input id="f_nearby_landmark" />
+          </div>
+          <div class="field full">
+            <label for="f_aliases">Aliases (คั่นด้วย comma)</label>
+            <input id="f_aliases" />
+          </div>
+          <div class="field full">
+            <label>Accessibility</label>
+            <div class="checkbox">
+              <input id="f_is_accessible" type="checkbox" />
+              <span>รองรับผู้สูงอายุ/รถเข็น</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="btn" id="resetFormBtn" type="button">ล้างฟอร์ม</button>
+          <button class="btn primary" type="submit">บันทึกลงตาราง</button>
+        </div>
+      </form>
+    </section>
+
     <section id="tableWrap"></section>
   </main>
 
   <script>
+    let sourceData = {};
     let places = [];
     let buildings = [];
+    let editingId = null;
+    let filtersBound = false;
 
     const $ = s => document.querySelector(s);
+    const clone = x => JSON.parse(JSON.stringify(x));
     const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+    const toNum = v => {
+      const n = Number(String(v ?? '').trim());
+      return Number.isFinite(n) ? n : null;
+    };
     const hasCoords = p => Number.isFinite(p.map_x) && Number.isFinite(p.map_y);
     const mapsUrl = p => p.google_maps_url || `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${p.lat},${p.lon}`)}&travelmode=walking`;
     const hasMaps = p => Boolean(p.google_maps_url) || (Number.isFinite(p.lat) && Number.isFinite(p.lon));
+    const parseCsv = v => String(v ?? '').split(',').map(s => s.trim()).filter(Boolean);
+
+    function normalizePlace(raw = {}){
+      const entity = raw.entity_type === 'building' ? 'building' : 'unit';
+      const p = {...raw};
+      p.id = String(raw.id ?? '').trim();
+      p.name_th = String(raw.name_th ?? '').trim();
+      p.name_en = String(raw.name_en ?? '').trim();
+      p.aliases = Array.isArray(raw.aliases) ? raw.aliases.map(x => String(x).trim()).filter(Boolean) : parseCsv(raw.aliases);
+      p.entity_type = entity;
+      p.unit_type = String(raw.unit_type ?? (entity === 'building' ? 'building' : 'service')).trim() || (entity === 'building' ? 'building' : 'service');
+      p.building_id = String(raw.building_id ?? (entity === 'building' ? raw.id : '') ?? '').trim();
+      p.building_name_th = String(raw.building_name_th ?? '').trim();
+      p.building_name_en = String(raw.building_name_en ?? '').trim();
+      p.category = String(raw.category ?? (entity === 'building' ? 'building' : '')).trim();
+      p.building = String(raw.building ?? '').trim();
+      p.floor = String(raw.floor ?? '').trim();
+      p.floor_label = String(raw.floor_label ?? raw.floor ?? '').trim();
+      p.room = String(raw.room ?? '').trim();
+      p.description = String(raw.description ?? '').trim();
+      p.phone = String(raw.phone ?? '-').trim() || '-';
+      p.opening_hours = String(raw.opening_hours ?? '-').trim() || '-';
+      p.nearby_landmark = String(raw.nearby_landmark ?? '').trim();
+      p.map_x = toNum(raw.map_x);
+      p.map_y = toNum(raw.map_y);
+      p.is_accessible = Boolean(raw.is_accessible);
+      p.icon = String(raw.icon ?? '📍').trim() || '📍';
+      p.lat = toNum(raw.lat);
+      p.lon = toNum(raw.lon);
+      p.google_maps_url = String(raw.google_maps_url ?? '').trim();
+      if(entity === 'building'){
+        p.unit_type = 'building';
+        p.category = p.category || 'building';
+        p.building_id = p.id;
+        p.building_name_th = p.name_th;
+        p.building_name_en = p.name_en;
+      }
+      return p;
+    }
+
+    function normalizeBuilding(raw = {}){
+      const b = {...raw};
+      b.id = String(raw.id ?? '').trim();
+      b.name_th = String(raw.name_th ?? '').trim();
+      b.name_en = String(raw.name_en ?? '').trim();
+      b.floors = raw.floors ?? null;
+      b.lat = toNum(raw.lat);
+      b.lon = toNum(raw.lon);
+      b.map_x = toNum(raw.map_x);
+      b.map_y = toNum(raw.map_y);
+      b.google_maps_url = String(raw.google_maps_url ?? '').trim();
+      return b;
+    }
+
+    function sortPlaces(){
+      places.sort((a,b) => {
+        const na = Number(a.id);
+        const nb = Number(b.id);
+        if(Number.isFinite(na) && Number.isFinite(nb) && na !== nb) return na - nb;
+        return String(a.id).localeCompare(String(b.id), 'th');
+      });
+    }
+
+    function showStatus(message, tone = 'ok'){
+      const bar = $('#statusBar');
+      bar.textContent = message;
+      bar.className = `status ${tone}`;
+      bar.hidden = false;
+    }
+
+    function hideStatus(){
+      $('#statusBar').hidden = true;
+    }
 
     async function loadData(){
       const res = await fetch('data/siriraj_data_location.json', {cache:'no-store'});
       if(!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-      places = Array.isArray(data.places) ? data.places : [];
-      buildings = Array.isArray(data.buildings) ? data.buildings : [];
+      sourceData = (data && typeof data === 'object') ? data : {};
+      places = Array.isArray(sourceData.places) ? sourceData.places.map(normalizePlace) : [];
+      buildings = Array.isArray(sourceData.buildings) ? sourceData.buildings.map(normalizeBuilding) : [];
+      sortPlaces();
     }
 
     function renderStats(){
@@ -115,8 +389,13 @@
     }
 
     function renderFilters(){
-      const cats = [...new Set(places.map(p => p.category).filter(Boolean))].sort();
+      const cats = [...new Set(places.map(p => p.category).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'th'));
+      const prev = $('#category').value || 'all';
       $('#category').innerHTML = `<option value="all">ทุกประเภท</option>` + cats.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join('');
+      $('#category').value = cats.includes(prev) ? prev : 'all';
+
+      if(filtersBound) return;
+      filtersBound = true;
       $('#q').addEventListener('input', renderTable);
       $('#entity').addEventListener('change', renderTable);
       $('#category').addEventListener('change', renderTable);
@@ -153,6 +432,7 @@
           <td><span class="pill">${esc(p.entity_type || 'unit')}</span><div class="muted">${esc(p.unit_type || p.category || '-')}</div></td>
           <td>${hasCoords(p) ? `<span class="pill">map_x ${p.map_x}, map_y ${p.map_y}</span><div class="muted">${esc(p.lat)}, ${esc(p.lon)}</div>` : `<span class="pill warn">ไม่มีพิกัด</span>`}</td>
           <td><div class="row-actions">
+            <button class="btn small" type="button" onclick="openEdit('${encodeURIComponent(p.id)}')">Edit</button>
             <a class="btn small" href="index.html?to=${encodeURIComponent(p.id)}">Preview</a>
             ${hasMaps(p) ? `<a class="btn small" href="${mapsUrl(p)}" target="_blank" rel="noopener">Google Maps</a>` : ''}
           </div></td>
@@ -160,12 +440,333 @@
       </table>`;
     }
 
-    loadData().then(() => {
+    function renderBuildingPicker(selected = ''){
+      const map = new Map();
+      buildings.forEach(b => {
+        if(!b.id) return;
+        map.set(String(b.id), {id:String(b.id), name_th:b.name_th || '', name_en:b.name_en || ''});
+      });
+      places.filter(p => (p.entity_type || 'unit') === 'building').forEach(p => {
+        if(!p.id) return;
+        map.set(String(p.id), {id:String(p.id), name_th:p.name_th || '', name_en:p.name_en || ''});
+      });
+      const options = [...map.values()].sort((a,b) => (a.name_th || a.id).localeCompare(b.name_th || b.id, 'th'));
+      $('#f_building_pick').innerHTML = `<option value="">-- เลือกตึก --</option>` + options.map(b => `<option value="${esc(b.id)}">${esc(`${b.id} · ${b.name_th || '-'} ${b.name_en ? `(${b.name_en})` : ''}`)}</option>`).join('');
+      $('#f_building_pick').value = options.some(x => x.id === selected) ? selected : '';
+    }
+
+    function clearEditorForm(){
+      editingId = null;
+      $('#editorTitle').textContent = 'เพิ่ม location';
+      $('#editorForm').reset();
+      $('#f_id').value = '';
+      $('#f_entity_type').value = 'unit';
+      $('#f_name_th').value = '';
+      $('#f_name_en').value = '';
+      $('#f_unit_type').value = 'service';
+      $('#f_category').value = 'service';
+      $('#f_building_pick').value = '';
+      $('#f_building_id').value = '';
+      $('#f_building_name_th').value = '';
+      $('#f_building_name_en').value = '';
+      $('#f_floor_label').value = '';
+      $('#f_room').value = '';
+      $('#f_map_x').value = '';
+      $('#f_map_y').value = '';
+      $('#f_lat').value = '';
+      $('#f_lon').value = '';
+      $('#f_icon').value = '📍';
+      $('#f_phone').value = '-';
+      $('#f_opening_hours').value = '-';
+      $('#f_google_maps_url').value = '';
+      $('#f_description').value = '';
+      $('#f_nearby_landmark').value = '';
+      $('#f_aliases').value = '';
+      $('#f_is_accessible').checked = true;
+    }
+
+    function fillEditorForm(place){
+      editingId = place.id;
+      $('#editorTitle').textContent = `แก้ไข location: ${place.id}`;
+      $('#f_id').value = place.id || '';
+      $('#f_entity_type').value = place.entity_type || 'unit';
+      $('#f_name_th').value = place.name_th || '';
+      $('#f_name_en').value = place.name_en || '';
+      $('#f_unit_type').value = place.unit_type || '';
+      $('#f_category').value = place.category || '';
+      $('#f_building_id').value = place.building_id || '';
+      $('#f_building_name_th').value = place.building_name_th || '';
+      $('#f_building_name_en').value = place.building_name_en || '';
+      $('#f_floor_label').value = place.floor_label || place.floor || '';
+      $('#f_room').value = place.room || '';
+      $('#f_map_x').value = Number.isFinite(place.map_x) ? String(place.map_x) : '';
+      $('#f_map_y').value = Number.isFinite(place.map_y) ? String(place.map_y) : '';
+      $('#f_lat').value = Number.isFinite(place.lat) ? String(place.lat) : '';
+      $('#f_lon').value = Number.isFinite(place.lon) ? String(place.lon) : '';
+      $('#f_icon').value = place.icon || '📍';
+      $('#f_phone').value = place.phone || '-';
+      $('#f_opening_hours').value = place.opening_hours || '-';
+      $('#f_google_maps_url').value = place.google_maps_url || '';
+      $('#f_description').value = place.description || '';
+      $('#f_nearby_landmark').value = place.nearby_landmark || '';
+      $('#f_aliases').value = Array.isArray(place.aliases) ? place.aliases.join(', ') : '';
+      $('#f_is_accessible').checked = Boolean(place.is_accessible);
+      renderBuildingPicker(place.building_id || '');
+    }
+
+    function showEditor(){
+      $('#editorPanel').hidden = false;
+    }
+
+    function hideEditor(){
+      $('#editorPanel').hidden = true;
+    }
+
+    function findBuildingById(id){
+      const key = String(id || '').trim();
+      if(!key) return null;
+      return buildings.find(b => String(b.id) === key)
+        || places.find(p => (p.entity_type || 'unit') === 'building' && String(p.id) === key)
+        || null;
+    }
+
+    function applySelectedBuilding(){
+      const b = findBuildingById($('#f_building_pick').value);
+      if(!b) return;
+      $('#f_building_id').value = String(b.id || '');
+      $('#f_building_name_th').value = String(b.name_th || '');
+      $('#f_building_name_en').value = String(b.name_en || '');
+      if(!$('#f_lat').value && Number.isFinite(b.lat)) $('#f_lat').value = String(b.lat);
+      if(!$('#f_lon').value && Number.isFinite(b.lon)) $('#f_lon').value = String(b.lon);
+      if(!$('#f_map_x').value && Number.isFinite(b.map_x)) $('#f_map_x').value = String(b.map_x);
+      if(!$('#f_map_y').value && Number.isFinite(b.map_y)) $('#f_map_y').value = String(b.map_y);
+    }
+
+    function syncEntityHints(){
+      const isBuilding = $('#f_entity_type').value === 'building';
+      if(isBuilding){
+        $('#f_unit_type').value = 'building';
+        if(!$('#f_category').value || $('#f_category').value === 'service') $('#f_category').value = 'building';
+        if($('#f_id').value) $('#f_building_id').value = $('#f_id').value.trim();
+        if($('#f_name_th').value) $('#f_building_name_th').value = $('#f_name_th').value.trim();
+        if($('#f_name_en').value) $('#f_building_name_en').value = $('#f_name_en').value.trim();
+      } else {
+        if($('#f_unit_type').value === 'building') $('#f_unit_type').value = 'service';
+      }
+    }
+
+    function buildAliasesFromPlace(place){
+      const chunks = [
+        place.name_th,
+        place.name_en,
+        place.id,
+        place.floor,
+        place.floor_label,
+        place.room,
+        place.building_name_th,
+        place.building_name_en,
+        place.category,
+        place.unit_type,
+        place.nearby_landmark
+      ];
+      const values = chunks.flatMap(x => parseCsv(x));
+      return [...new Set(values.map(x => x.trim()).filter(Boolean))];
+    }
+
+    function upsertBuildingFromPlace(place){
+      if((place.entity_type || 'unit') !== 'building') return;
+      const building = normalizeBuilding({
+        id: place.id,
+        name_th: place.name_th,
+        name_en: place.name_en,
+        floors: null,
+        lat: place.lat,
+        lon: place.lon,
+        map_x: place.map_x,
+        map_y: place.map_y,
+        google_maps_url: place.google_maps_url
+      });
+      const idx = buildings.findIndex(b => String(b.id) === building.id);
+      if(idx >= 0){
+        buildings[idx] = {...buildings[idx], ...building};
+        return;
+      }
+      buildings.push(building);
+    }
+
+    function removeBuildingById(id){
+      const key = String(id || '').trim();
+      if(!key) return;
+      buildings = buildings.filter(b => String(b.id) !== key);
+    }
+
+    function saveFromEditor(event){
+      event.preventDefault();
+      const currentId = $('#f_id').value.trim();
+      if(!currentId){
+        showStatus('กรุณากรอก ID', 'warn');
+        return;
+      }
+      const nameTh = $('#f_name_th').value.trim();
+      if(!nameTh){
+        showStatus('กรุณากรอกชื่อไทย', 'warn');
+        return;
+      }
+
+      const existing = editingId ? places.find(p => p.id === editingId) : null;
+      const dup = places.find(p => p.id === currentId && p.id !== editingId);
+      if(dup){
+        showStatus(`ID ซ้ำ: ${currentId}`, 'warn');
+        return;
+      }
+
+      const base = existing ? clone(existing) : {};
+      base.id = currentId;
+      base.entity_type = $('#f_entity_type').value === 'building' ? 'building' : 'unit';
+      base.name_th = nameTh;
+      base.name_en = $('#f_name_en').value.trim();
+      base.unit_type = $('#f_unit_type').value.trim() || (base.entity_type === 'building' ? 'building' : 'service');
+      base.category = $('#f_category').value.trim() || (base.entity_type === 'building' ? 'building' : 'service');
+      base.building_id = $('#f_building_id').value.trim();
+      base.building_name_th = $('#f_building_name_th').value.trim();
+      base.building_name_en = $('#f_building_name_en').value.trim();
+      base.floor_label = $('#f_floor_label').value.trim();
+      base.floor = base.floor_label;
+      base.room = $('#f_room').value.trim();
+      base.map_x = toNum($('#f_map_x').value);
+      base.map_y = toNum($('#f_map_y').value);
+      base.lat = toNum($('#f_lat').value);
+      base.lon = toNum($('#f_lon').value);
+      base.icon = $('#f_icon').value.trim() || '📍';
+      base.phone = $('#f_phone').value.trim() || '-';
+      base.opening_hours = $('#f_opening_hours').value.trim() || '-';
+      base.google_maps_url = $('#f_google_maps_url').value.trim();
+      base.description = $('#f_description').value.trim();
+      base.nearby_landmark = $('#f_nearby_landmark').value.trim();
+      base.aliases = parseCsv($('#f_aliases').value);
+      base.is_accessible = $('#f_is_accessible').checked;
+
+      if(base.entity_type === 'building'){
+        base.unit_type = 'building';
+        base.category = base.category || 'building';
+        base.building_id = base.id;
+        base.building_name_th = base.name_th;
+        base.building_name_en = base.name_en;
+      } else {
+        if(!base.building_id) base.building_id = $('#f_building_pick').value.trim();
+        if(!base.building_name_th || !base.building_name_en){
+          const refBuilding = findBuildingById(base.building_id);
+          if(refBuilding){
+            base.building_name_th = base.building_name_th || refBuilding.name_th || '';
+            base.building_name_en = base.building_name_en || refBuilding.name_en || '';
+          }
+        }
+      }
+
+      if(!base.google_maps_url && Number.isFinite(base.lat) && Number.isFinite(base.lon)){
+        base.google_maps_url = mapsUrl(base);
+      }
+      if(!base.aliases.length) base.aliases = buildAliasesFromPlace(base);
+
+      const normalized = normalizePlace(base);
+      if(existing){
+        const oldEntity = existing.entity_type || 'unit';
+        if(oldEntity === 'building' && normalized.entity_type !== 'building'){
+          removeBuildingById(existing.id);
+        }
+        const idx = places.findIndex(p => p.id === existing.id);
+        places[idx] = normalized;
+      } else {
+        places.push(normalized);
+      }
+
+      upsertBuildingFromPlace(normalized);
+      sortPlaces();
+      hideEditor();
       renderStats();
       renderFilters();
+      renderBuildingPicker();
+      renderTable();
+      showStatus('บันทึกในหน้า admin แล้ว (ยังไม่เขียนทับไฟล์จริง) กด Export JSON เพื่อดาวน์โหลดไฟล์', 'ok');
+    }
+
+    function exportJson(){
+      const payload = {
+        ...sourceData,
+        buildings,
+        places
+      };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'siriraj_data_location.updated.json';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      showStatus('ดาวน์โหลดไฟล์ใหม่แล้ว: siriraj_data_location.updated.json', 'ok');
+    }
+
+    async function reloadFromFile(){
+      await loadData();
+      hideEditor();
+      renderStats();
+      renderFilters();
+      renderBuildingPicker();
+      renderTable();
+      showStatus('โหลดข้อมูลล่าสุดจากไฟล์ JSON แล้ว', 'ok');
+    }
+
+    function bindActions(){
+      $('#addLocationBtn').addEventListener('click', () => {
+        hideStatus();
+        clearEditorForm();
+        renderBuildingPicker();
+        showEditor();
+        $('#f_id').focus();
+      });
+      $('#cancelEditBtn').addEventListener('click', hideEditor);
+      $('#resetFormBtn').addEventListener('click', clearEditorForm);
+      $('#exportJsonBtn').addEventListener('click', exportJson);
+      $('#reloadDataBtn').addEventListener('click', () => {
+        reloadFromFile().catch(err => {
+          console.error(err);
+          showStatus('โหลดข้อมูลใหม่ไม่สำเร็จ', 'warn');
+        });
+      });
+      $('#editorForm').addEventListener('submit', saveFromEditor);
+      $('#f_entity_type').addEventListener('change', syncEntityHints);
+      $('#f_building_pick').addEventListener('change', applySelectedBuilding);
+      $('#f_id').addEventListener('input', syncEntityHints);
+      $('#f_name_th').addEventListener('input', syncEntityHints);
+      $('#f_name_en').addEventListener('input', syncEntityHints);
+    }
+
+    function openEdit(encodedId){
+      const id = decodeURIComponent(encodedId);
+      const place = places.find(p => p.id === id);
+      if(!place){
+        showStatus('ไม่พบ location ที่ต้องการแก้ไข', 'warn');
+        return;
+      }
+      hideStatus();
+      fillEditorForm(place);
+      showEditor();
+      $('#f_name_th').focus();
+    }
+
+    window.openEdit = openEdit;
+
+    loadData().then(() => {
+      bindActions();
+      renderStats();
+      renderFilters();
+      renderBuildingPicker();
       renderTable();
     }).catch(err => {
       console.error(err);
+      showStatus('โหลดข้อมูลไม่สำเร็จ', 'warn');
       $('#tableWrap').innerHTML = `<div class="panel empty">โหลดข้อมูลไม่สำเร็จ</div>`;
     });
   </script>
